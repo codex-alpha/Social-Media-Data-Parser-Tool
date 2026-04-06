@@ -23,10 +23,10 @@ export function SocialGraphPanel() {
 
     // Platform colors
     const platformColor = {
-      twitter: '#1DA1F2',
-      instagram: '#E1306C',
-      facebook: '#1877F2',
-      reddit: '#FF4500',
+      twitter: '#DD9E59',
+      instagram: '#A47251',
+      facebook: '#DD9E59',
+      reddit: '#A47251',
       unknown: '#64748b',
     };
 
@@ -71,7 +71,7 @@ export function SocialGraphPanel() {
       .selectAll('line')
       .data(validLinks)
       .join('line')
-      .attr('stroke', d => d.type === 'correlation' ? '#8b5cf6' : 'rgba(255,255,255,0.1)')
+      .attr('stroke', d => d.type === 'correlation' ? '#A47251' : 'rgba(255,255,255,0.1)')
       .attr('stroke-width', d => d.type === 'correlation' ? Math.max(1, d.weight * 3) : 1)
       .attr('stroke-dasharray', d => d.type === 'correlation' ? '6,3' : 'none')
       .attr('opacity', 0.6);
@@ -96,7 +96,7 @@ export function SocialGraphPanel() {
     node.append('circle')
       .attr('r', d => d.is_bot ? 12 : (d.verified ? 10 : 8))
       .attr('fill', d => platformColor[d.platform] || platformColor.unknown)
-      .attr('stroke', d => d.is_bot ? '#ef4444' : 'rgba(255,255,255,0.2)')
+      .attr('stroke', d => d.is_bot ? '#A47251' : 'rgba(255,255,255,0.2)')
       .attr('stroke-width', d => d.is_bot ? 3 : 1.5)
       .attr('filter', d => d.is_bot ? 'url(#glow)' : 'none')
       .style('cursor', 'pointer')
@@ -155,11 +155,11 @@ export function SocialGraphPanel() {
           <div className="card-title"><Network size={16} className="icon" /> Network Visualization</div>
           <div style={{ display: 'flex', gap: '12px', fontSize: '11px', color: 'var(--text-muted)' }}>
             <span>🔵 Twitter</span>
-            <span style={{ color: '#E1306C' }}>● Instagram</span>
-            <span style={{ color: '#1877F2' }}>● Facebook</span>
-            <span style={{ color: '#FF4500' }}>● Reddit</span>
+            <span style={{ color: '#A47251' }}>● Instagram</span>
+            <span style={{ color: '#DD9E59' }}>● Facebook</span>
+            <span style={{ color: '#A47251' }}>● Reddit</span>
             <span>🤖 Bot</span>
-            <span style={{ color: '#8b5cf6' }}>- - Correlation</span>
+            <span style={{ color: '#A47251' }}>- - Correlation</span>
           </div>
         </div>
         <div className="card-body" style={{ padding: 0, position: 'relative' }} ref={containerRef}>

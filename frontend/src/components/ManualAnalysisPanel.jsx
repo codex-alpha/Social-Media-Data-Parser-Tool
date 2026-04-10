@@ -172,12 +172,12 @@ export function ManualAnalysisPanel() {
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', color: 'var(--text-muted)', marginBottom: '4px' }}>Username</label>
                   <input type="text" value={profileInput.username} onChange={e => setProfileInput({...profileInput, username: e.target.value})} 
-                    style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'white' }} placeholder="@johndoe" />
+                    style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'black' }} placeholder="@johndoe" />
                 </div>
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', color: 'var(--text-muted)', marginBottom: '4px' }}>Platform</label>
                   <select value={profileInput.platform} onChange={e => setProfileInput({...profileInput, platform: e.target.value})}
-                    style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'white' }}>
+                    style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'black' }}>
                     <option value="twitter">Twitter</option>
                     <option value="facebook">Facebook</option>
                     <option value="instagram">Instagram</option>
@@ -189,21 +189,21 @@ export function ManualAnalysisPanel() {
               <div style={{ marginBottom: '12px' }}>
                  <label style={{ display: 'block', fontSize: '11px', color: 'var(--text-muted)', marginBottom: '4px' }}>Bio</label>
                  <textarea value={profileInput.bio} onChange={e => setProfileInput({...profileInput, bio: e.target.value})}
-                    style={{ width: '100%', height: '60px', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'white', resize: 'none' }} placeholder="Profile bio..." />
+                    style={{ width: '100%', height: '60px', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'black', resize: 'none' }} placeholder="Profile bio..." />
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '12px', marginBottom: '16px' }}>
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', color: 'var(--text-muted)', marginBottom: '4px' }}>Followers</label>
-                  <input type="number" min="0" value={profileInput.followers_count} onChange={e => setProfileInput({...profileInput, followers_count: parseInt(e.target.value) || 0})} style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'white' }} />
+                  <input type="number" min="0" value={profileInput.followers_count} onChange={e => setProfileInput({...profileInput, followers_count: parseInt(e.target.value) || 0})} style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'black' }} />
                 </div>
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', color: 'var(--text-muted)', marginBottom: '4px' }}>Following</label>
-                  <input type="number" min="0" value={profileInput.following_count} onChange={e => setProfileInput({...profileInput, following_count: parseInt(e.target.value) || 0})} style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'white' }} />
+                  <input type="number" min="0" value={profileInput.following_count} onChange={e => setProfileInput({...profileInput, following_count: parseInt(e.target.value) || 0})} style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'black' }} />
                 </div>
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', color: 'var(--text-muted)', marginBottom: '4px' }}>Total Posts</label>
-                  <input type="number" min="0" value={profileInput.posts_count} onChange={e => setProfileInput({...profileInput, posts_count: parseInt(e.target.value) || 0})} style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'white' }} />
+                  <input type="number" min="0" value={profileInput.posts_count} onChange={e => setProfileInput({...profileInput, posts_count: parseInt(e.target.value) || 0})} style={{ width: '100%', padding: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '4px', color: 'black' }} />
                 </div>
               </div>
 

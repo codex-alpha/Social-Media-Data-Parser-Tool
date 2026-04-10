@@ -27,7 +27,7 @@ export function Sidebar({ activePage, onNavigate }) {
         <div className="sidebar-logo">
           <div className="logo-icon">⚡</div>
           <div>
-            <div className="logo-text">SMDPIS</div>
+            <div className="logo-text">Hawkeye</div>
             <div className="logo-sub">Intelligence Platform</div>
           </div>
         </div>
